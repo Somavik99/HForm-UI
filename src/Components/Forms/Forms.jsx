@@ -7,16 +7,16 @@ const Forms = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data)=>{
-console.log(data)
-  }
+  const onSubmit = (data) => {
+    console.log(data);
+  };
 
   return (
     <div>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="form-control">
           <label>Email</label>
-          <input type="text" name="email" {...register("email")} />
+          <input type="text" name="email"  {...register("email")} />
         </div>
         <div className="form-control">
           <label>Password</label>
