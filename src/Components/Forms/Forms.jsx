@@ -1,12 +1,12 @@
-import PersonalDetails from "./PersonalDetails/PersonalDetails"
-
+import PersonalDetails from "./PersonalDetails/PersonalDetails";
+import "./Forms.css";
 
 const Forms = () => {
   return (
-    <div>
-      <PersonalDetails/>
+    <div className="FormContainer">
+      <PersonalDetails />
     </div>
-  )
-}
+  );
+};
 
-export default Forms
+export default Forms;
