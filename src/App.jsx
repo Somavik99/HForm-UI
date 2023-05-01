@@ -1,5 +1,6 @@
 
 import './App.css'
+import Forms from './Components/Forms/Forms'
 
 function App() {
   
@@ -8,6 +9,7 @@ function App() {
     <>
       <div>
       <h1>Hello</h1>
+      <Forms/>
       </div>
 
     </>
