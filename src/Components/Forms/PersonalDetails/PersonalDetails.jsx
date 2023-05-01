@@ -4,56 +4,56 @@ const PersonalDetails = () => {
   return (
     <div className="PersonalContainer">
       <div>
-        <div className="container" style={{ textDecorationLine: "underline" }}>
+        <div style={{ textDecorationLine: "underline" }}>
           <h3>Personal Details</h3>
         </div>
         <div className="PersonalDetails">
           <div>
-            <span>Name:</span>
+            <span>
+              Name<span style={{ color: "red" }}>*</span>:
+            </span>
             <input
               type="text"
               name="name"
-              style={{ marginLeft: "8px", width: "200px", height: "22px" }}
+              placeholder="Name"
+              style={{ marginLeft: "8px", width: "250px", height: "22px" }}
             />
           </div>
           <div>
-            <span>Date Of Birth or Age:</span>
+            <span>
+              Date Of Birth or Age<span style={{ color: "red" }}>*</span>:
+            </span>
             <input
               type="text"
               name="DobA"
-              style={{ marginLeft: "8px", width: "200px", height: "22px" }}
+              placeholder="DD/MM/YYYY or Age"
+              style={{ marginLeft: "8px", width: "250px", height: "22px" }}
             />
           </div>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <span>Sex:</span>
+          <div>
+            <span>
+              Sex<span style={{ color: "red" }}>*</span>:
+            </span>
             <input
               type="text"
               name="sex"
-              style={{ marginLeft: "8px", width: "200px", height: "22px" }}
+              placeholder="Sex"
+              style={{ marginLeft: "8px", width: "250px", height: "22px" }}
             />
           </div>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
+          <div>
             <span>Mobile:</span>
             <input
               type="text"
               name="mobile"
-              style={{ marginLeft: "8px", width: "200px", height: "22px" }}
+              placeholder="Mobile No."
+              style={{ marginLeft: "8px", width: "250px", height: "22px" }}
             />
           </div>
           <div className="Govt">
-            <span>Govt. Issued ID or Age:</span>
+            <span>
+              Govt. Issued ID or Age<span style={{ color: "red" }}>*</span>:
+            </span>
             <GovtIssueId />
           </div>
         </div>

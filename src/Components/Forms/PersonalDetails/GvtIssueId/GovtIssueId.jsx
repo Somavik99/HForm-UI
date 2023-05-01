@@ -12,7 +12,7 @@ const GovtIssueId = () => {
           Pan Card
         </option>
       </select>
-      <input type="text" placeholder="Enter Govt. ID" style={{width:"200px", height:"22px",margin:"8px"}} />
+      <input type="text" placeholder="Enter Govt. ID" style={{width:"250px", height:"22px",margin:"8px"}} />
     </div>
   );
 };

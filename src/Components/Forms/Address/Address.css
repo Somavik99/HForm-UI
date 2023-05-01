@@ -1,14 +1,10 @@
-.PersonalDetails {
+.AddressContainer {
   margin-top: 15px;
   position: fixed;
   display: grid;
   justify-content: center;
   align-items: center;
-
+  column-gap: 158px;
   row-gap: 38%;
   grid-template-columns: repeat(3, 1fr);
-}
-
-.Govt {
-  display: flex;
 }
