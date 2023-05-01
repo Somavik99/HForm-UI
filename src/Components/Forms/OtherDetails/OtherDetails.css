@@ -1,0 +1,10 @@
+.OthDetails-container{
+    margin-top: 15px;
+    position: fixed;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+    row-gap: 38%;
+    grid-template-columns: repeat(3, 1fr);
+}
