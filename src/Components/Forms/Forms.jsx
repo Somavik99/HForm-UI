@@ -3,13 +3,12 @@ import PersonalDetails from "./PersonalDetails/PersonalDetails";
 import ContactDetails from "./ContactDetails/ContactDetails";
 import Address from "./Address/Address";
 import OtherDetails from "./OtherDetails/OtherDetails";
-
-
+import Btn from "./Btn/Btn";
 
 const Forms = () => {
   return (
-    <>
-      <div className="Personal" >
+    <form className="container">
+      <div className="Personal">
         <PersonalDetails />
       </div>
       <div className="Contact">
@@ -21,7 +20,10 @@ const Forms = () => {
       <div className="Address">
         <OtherDetails />
       </div>
-    </>
+      <div style={{float:"right"}}>
+        <Btn />
+      </div>
+    </form>
   );
 };
 

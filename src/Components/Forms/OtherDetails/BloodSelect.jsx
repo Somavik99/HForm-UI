@@ -3,7 +3,7 @@
 const BloodSelect = () => {
   return (
     <div>
-      <select name="" id="" style={{ marginLeft: "8px", width: "250px", height: "30px" }}>
+      <select name="" id="" style={{ marginLeft: "8px", width: "250px", height: "35px" }}>
         <option value="" disabled selected>Enter Blood Type</option>
         <option value="">A RhD positive (A+)</option>
         <option value="">A RhD negative (A-)</option>

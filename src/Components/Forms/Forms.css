@@ -1,17 +1,28 @@
-.Personal{
-    width: 160%;
-    height: 180px ;
-    margin: auto 58px;
+.Personal {
+  width: 160%;
+  height: 180px;
+  margin: auto 88px;
 }
 
-.Contact{
-    width: 160%;
-    height: 140px ;
-    margin: auto 58px;
+.Contact {
+  width: 160%;
+  height: 140px;
+  margin: auto 88px;
 }
 
-.Address{
-    width: 160%;
-    height: 180px ;
-    margin: auto 58px;
+.Address {
+  width: 160%;
+  height: 180px;
+  margin: auto 88px;
+}
+
+.container {
+  position: fixed;
+  border: 2px solid black;
+  width: 88vw;
+  padding: 18px;
+  height: 50em;
+border-radius: 15px;
+margin-left: 2.8%;
+margin-bottom: 8%;
 }
