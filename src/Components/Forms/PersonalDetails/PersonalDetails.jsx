@@ -16,7 +16,7 @@ const PersonalDetails = () => {
               type="text"
               name="name"
               placeholder="Name"
-              style={{ marginLeft: "8px", width: "250px", height: "22px" }}
+              style={{ marginLeft: "8px", width: "250px", height: "30px" }}
             />
           </div>
           <div>
@@ -27,7 +27,7 @@ const PersonalDetails = () => {
               type="text"
               name="DobA"
               placeholder="DD/MM/YYYY or Age"
-              style={{ marginLeft: "8px", width: "250px", height: "22px" }}
+              style={{ marginLeft: "8px", width: "250px", height: "30px" }}
             />
           </div>
           <div>
@@ -38,7 +38,7 @@ const PersonalDetails = () => {
               type="text"
               name="sex"
               placeholder="Sex"
-              style={{ marginLeft: "8px", width: "250px", height: "22px" }}
+              style={{ marginLeft: "8px", width: "250px", height: "30px" }}
             />
           </div>
           <div>
@@ -47,7 +47,7 @@ const PersonalDetails = () => {
               type="text"
               name="mobile"
               placeholder="Mobile No."
-              style={{ marginLeft: "8px", width: "250px", height: "22px" }}
+              style={{ marginLeft: "8px", width: "250px", height: "30px" }}
             />
           </div>
           <div className="Govt">

@@ -11,45 +11,45 @@ const Address = () => {
           <span>Address :</span>
           <input
             type="text"
-            name="name"
-            placeholder="Name"
-            style={{ marginLeft: "8px", width: "250px", height: "22px" }}
+            name="Address"
+            placeholder="Enter Address"
+            style={{ marginLeft: "8px", width: "250px", height: "30px" }}
           />
         </div>
         <div>
           <span>State:</span>
           <input
             type="text"
-            name="name"
-            placeholder="Name"
-            style={{ marginLeft: "8px", width: "250px", height: "22px" }}
+            name="state"
+            placeholder="Enter State"
+            style={{ marginLeft: "8px", width: "250px", height: "30px" }}
           />
         </div>
         <div>
           <span>City:</span>
           <input
             type="text"
-            name="name"
-            placeholder="Name"
-            style={{ marginLeft: "8px", width: "250px", height: "22px" }}
+            name="City"
+            placeholder="Enter City or Village"
+            style={{ marginLeft: "8px", width: "250px", height: "30px" }}
           />
         </div>
         <div>
           <span>Country:</span>
           <input
             type="text"
-            name="name"
-            placeholder="Name"
-            style={{ marginLeft: "8px", width: "250px", height: "22px" }}
+            name="Country"
+            placeholder="Enter Country"
+            style={{ marginLeft: "8px", width: "250px", height: "30px" }}
           />
         </div>
         <div>
           <span>Pin Code:</span>
           <input
             type="text"
-            name="name"
-            placeholder="Name"
-            style={{ marginLeft: "8px", width: "250px", height: "22px" }}
+            name="PinCode"
+            placeholder="Enter Pin Code"
+            style={{ marginLeft: "8px", width: "250px", height: "30px" }}
           />
         </div>
       </div>

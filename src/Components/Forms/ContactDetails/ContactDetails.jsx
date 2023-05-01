@@ -14,7 +14,7 @@ const ContactDetails = () => {
               type="text"
               name="name"
               placeholder="Name"
-              style={{ marginLeft: "8px", width: "250px", height: "22px" }}
+              style={{ marginLeft: "8px", width: "250px", height: "30px" }}
             />
           </div>
           <div>
@@ -23,7 +23,7 @@ const ContactDetails = () => {
               type="text"
               name="email"
               placeholder="Enter Email"
-              style={{ marginLeft: "8px", width: "250px", height: "22px" }}
+              style={{ marginLeft: "8px", width: "250px", height: "30px" }}
             />
           </div>
           <div>
@@ -32,7 +32,7 @@ const ContactDetails = () => {
               type="text"
               name="name"
               placeholder="Emergency Contact No."
-              style={{ marginLeft: "8px", width: "250px", height: "22px" }}
+              style={{ marginLeft: "8px", width: "250px", height: "30px" }}
             />
           </div>
         </div>
