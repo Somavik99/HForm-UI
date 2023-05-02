@@ -8,11 +8,7 @@ const GovtIssueId = () => {
   const {
     register,
     formState: { errors },
-  } = useForm({
-    defaultValues: {
-      select: "",
-    },
-  });
+  } = useForm();
 
   const options = [
     { value: "Adhaar", label: "Adhaar Card" },
@@ -25,6 +21,10 @@ const GovtIssueId = () => {
         options={options}
         defaultValue={InitialValue}
         placeholder="ID Type"
+        {...register("Select",{
+          required: true,
+          maxLength:{}
+        })}
       />
       <input
         type="text"
@@ -34,9 +34,10 @@ const GovtIssueId = () => {
         {...register("Govt",{
           required:true
         })}
+        onChange={(e)=>setInitialValue(e.target.InitialValue)}
       />
-      {errors.name==={options} && <p>Enter 12 digit Adhaar number</p>}
-      {errors.name=== {options} && <p>Enter the Pan number</p>}
+      {errors.Govt == InitialValue && <div>Enter 12 digit Adhaar number</div>}
+      {errors.Govt == InitialValue && <div>Enter the Pan number</div>}
     </div>
   );
 };

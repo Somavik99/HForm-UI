@@ -4,10 +4,17 @@ import ContactDetails from "./ContactDetails/ContactDetails";
 import Address from "./Address/Address";
 import OtherDetails from "./OtherDetails/OtherDetails";
 import Btn from "./Btn/Btn";
+import { useForm } from "react-hook-form";
 
 const Forms = () => {
+  const {handleSubmit} = useForm()
+
+const onSubmit = (data)=>{
+  console.log(data)
+}
+
   return (
-    <form className="container">
+    <form className="container" onSubmit={handleSubmit(onSubmit)}>
       <div className="Personal">
         <PersonalDetails />
       </div>
