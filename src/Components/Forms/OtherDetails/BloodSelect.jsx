@@ -1,6 +1,8 @@
+import { useState } from "react"
 
 
 const BloodSelect = () => {
+  useState("")
   return (
     <div>
       <select name="" id="" style={{ marginLeft: "8px", width: "250px", height: "35px" }}>
