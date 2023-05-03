@@ -1,8 +1,8 @@
 import "./Address.css";
 
-const Address = ({register,required}) => {
+const Address = ({register,required,onHandleSubmit}) => {
   return (
-    <div>
+    <div onSubmit={onHandleSubmit}>
       <div style={{ textDecorationLine: "underline" }}>
         <h3>Address Details</h3>
       </div>

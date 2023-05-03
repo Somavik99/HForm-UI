@@ -5,11 +5,11 @@ import "./PersonalDetails.css";
 
 
 
-const PersonalDetails = ({register,required}) => {
+const PersonalDetails = ({register,required,onHandleSubmit}) => {
 
   
   return (
-    <div className="PersonalContainer">
+    <div className="PersonalContainer" onSubmit={onHandleSubmit}>
       <div>
         <div style={{ textDecorationLine: "underline" }}>
           <h3>Personal Details</h3>

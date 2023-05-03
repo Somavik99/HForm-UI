@@ -2,7 +2,7 @@ import "./GovtIssuedId.css";
 import Select from "react-select";
 import { useState } from "react";
 
-const GovtIssueId = ({ register, required }) => {
+const GovtIssueId = ({ register, required,onHandleSubmit }) => {
   const [InitialValue, setInitialValue] = useState(null);
 
   const options = [
@@ -11,7 +11,7 @@ const GovtIssueId = ({ register, required }) => {
   ];
 
   return (
-    <div className="GovtContainer">
+    <form className="GovtContainer" onSubmit={onHandleSubmit}>
       <Select
         options={options}
         defaultValue={InitialValue}
@@ -32,7 +32,7 @@ const GovtIssueId = ({ register, required }) => {
       />
       {/* {errors.Govt == InitialValue && <div>Enter 12 digit Adhaar number</div>}
       {errors.Govt == InitialValue && <div>Enter the Pan number</div>} */}
-    </div>
+    </form>
   );
 };
 

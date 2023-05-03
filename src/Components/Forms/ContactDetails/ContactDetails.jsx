@@ -1,8 +1,8 @@
 import "./ContactDetails.css";
 
-const ContactDetails = ({register,required}) => {
+const ContactDetails = ({ register, required, onHandleSubmit}) => {
   return (
-    <div>
+    <div onSubmit={onHandleSubmit}>
       <div>
         <div style={{ textDecorationLine: "underline" }}>
           <h3>Contact Details</h3>
@@ -12,9 +12,12 @@ const ContactDetails = ({register,required}) => {
             <span>Guardian Details:</span>
             <input
               type="text"
-              name="name"
+              name="gName"
               placeholder="Name"
               style={{ marginLeft: "8px", width: "250px", height: "30px" }}
+              {...register("gName", {
+                required,
+              })}
             />
           </div>
           <div>
@@ -24,15 +27,17 @@ const ContactDetails = ({register,required}) => {
               name="email"
               placeholder="Enter Email"
               style={{ marginLeft: "8px", width: "250px", height: "30px" }}
+              {...register("email", { required })}
             />
           </div>
           <div>
             <span>Emergency Contact Number:</span>
             <input
               type="text"
-              name="name"
+              name="EmerGencyContact"
               placeholder="Emergency Contact No."
               style={{ marginLeft: "8px", width: "250px", height: "30px" }}
+              {...register("EmerGencyContact", { required })}
             />
           </div>
         </div>
