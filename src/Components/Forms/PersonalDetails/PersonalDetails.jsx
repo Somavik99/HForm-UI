@@ -1,20 +1,17 @@
 // import { useForm } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import GovtIssueId from "./GvtIssueId/GovtIssueId";
 import "./PersonalDetails.css";
 
-
-
-
-const PersonalDetails = ({register,required,onHandleSubmit}) => {
-
-  
+const PersonalDetails = ({ register, required }) => {
+  const {formState: {errors}} = useForm()
   return (
-    <div className="PersonalContainer" onSubmit={onHandleSubmit}>
+    <div className="PersonalContainer">
       <div>
         <div style={{ textDecorationLine: "underline" }}>
           <h3>Personal Details</h3>
         </div>
-        <div className="PersonalDetails" >
+        <div className="PersonalDetails">
           <div>
             <span>
               Name<span style={{ color: "red" }}>*</span>:
@@ -23,9 +20,15 @@ const PersonalDetails = ({register,required,onHandleSubmit}) => {
               type="text"
               name="name"
               placeholder="Name"
-              {...register("name", {required})}
-              style={{ marginLeft: "8px", width: "250px", height: "30px",padding:"3px" }}
+              {...register("FirstName", { required })}
+              style={{
+                marginLeft: "8px",
+                width: "250px",
+                height: "30px",
+                padding: "3px",
+              }}
             />
+{errors.FirstName && <span style={{color:"red"}}>Name required</span> }
           </div>
           <div>
             <span>
@@ -35,7 +38,7 @@ const PersonalDetails = ({register,required,onHandleSubmit}) => {
               type="text"
               name="DobA"
               placeholder="DD/MM/YYYY or Age"
-              {...register("DobA",{required})}
+              {...register("DobA", { required, valueAsNumber: true })}
               style={{ marginLeft: "8px", width: "250px", height: "30px" }}
             />
           </div>
@@ -47,7 +50,7 @@ const PersonalDetails = ({register,required,onHandleSubmit}) => {
               type="text"
               name="sex"
               placeholder="Sex"
-              {...register("sex",{required})}
+              {...register("sex", { required })}
               style={{ marginLeft: "8px", width: "250px", height: "30px" }}
             />
           </div>
@@ -57,7 +60,13 @@ const PersonalDetails = ({register,required,onHandleSubmit}) => {
               type="text"
               name="mobile"
               placeholder="Mobile No."
-              {...register("mobile",{required})}
+              {...register("mobile", {
+                required,
+                valueAsNumber: true,
+                maxLength: {
+                  value: 10,
+                },
+              })}
               style={{ marginLeft: "8px", width: "250px", height: "30px" }}
             />
           </div>
@@ -65,7 +74,7 @@ const PersonalDetails = ({register,required,onHandleSubmit}) => {
             <span>
               Govt. Issued ID or Age<span style={{ color: "red" }}>*</span>:
             </span>
-            <GovtIssueId  register={register} required />
+            <GovtIssueId register={register} required />
           </div>
         </div>
       </div>

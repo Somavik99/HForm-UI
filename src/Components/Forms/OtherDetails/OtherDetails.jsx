@@ -3,10 +3,10 @@ import MaritalSelect from "./MaritalSelect";
 import "./OtherDetails.css";
 import Religion from "./Religion";
 
-const OtherDetails = ({ register, required,onHandleSubmit }) => {
+const OtherDetails = ({ register, required, }) => {
   return (
     <div>
-      <div style={{ textDecorationLine: "underline" }}onSubmit={onHandleSubmit}>
+      <div style={{ textDecorationLine: "underline" }}>
         <h3>Other Details</h3>
       </div>
       <div className="OthDetails-container">

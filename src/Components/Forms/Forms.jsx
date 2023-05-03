@@ -4,10 +4,20 @@ import ContactDetails from "./ContactDetails/ContactDetails";
 import Address from "./Address/Address";
 import OtherDetails from "./OtherDetails/OtherDetails";
 import Btn from "./Btn/Btn";
+import { useForm } from "react-hook-form";
 
-const Forms = ({ register, handleSubmit }) => {
+const Forms = ({ register, handleSubmit,required }) => {
+  const {
+
+    formState: { errors },
+  } = useForm();
   const onHandleSubmit = (data) => {
-    console.log(data);
+    if (data) {
+      console.log(data);
+    } else {
+      console.log(errors);
+    }
+
     // localStorage.setItem("data", JSON.stringify(data));
   };
 
@@ -16,29 +26,29 @@ const Forms = ({ register, handleSubmit }) => {
       <div className="Personal">
         <PersonalDetails
           register={register}
-          required
-          onHandleSubmit={onHandleSubmit}
+          required={required}
+         
         />
       </div>
       <div className="Contact">
         <ContactDetails
           register={register}
-          required
+          required={required}
           onHandleSubmit={onHandleSubmit}
         />
       </div>
       <div className="Address">
-        <Address register={register} required onHandleSubmit={onHandleSubmit} />
+        <Address register={register} required={required}  />
       </div>
       <div className="Address">
         <OtherDetails
           register={register}
-          required
-          onHandleSubmit={onHandleSubmit}
+          required={required}
+          
         />
       </div>
       <div style={{ float: "right" }}>
-        <Btn onHandleSubmit={onHandleSubmit}/>
+        <Btn handleSubmit={handleSubmit} register={register}/>
       </div>
     </form>
   );

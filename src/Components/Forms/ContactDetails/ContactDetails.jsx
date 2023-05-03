@@ -1,8 +1,8 @@
 import "./ContactDetails.css";
 
-const ContactDetails = ({ register, required, onHandleSubmit}) => {
+const ContactDetails = ({ register, required,}) => {
   return (
-    <div onSubmit={onHandleSubmit}>
+    <div >
       <div>
         <div style={{ textDecorationLine: "underline" }}>
           <h3>Contact Details</h3>

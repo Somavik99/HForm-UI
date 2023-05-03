@@ -1,13 +1,13 @@
 import "./Btn.css"
 
-const Btn = ({onHandleSubmit}) => {
+const Btn = () => {
   return (
-    <div className="btn_Class" onSubmit={onHandleSubmit}>
+    <div className="btn_Class" >
       <span >
-        <button className="Cancel">CANCEL</button>
+        <input type="button" className="Cancel" value="CANCEL" />
       </span>
       <span>
-        <button type="submit" className="submit" >SUBMIT</button>
+        <input type="submit" className="submit" value="SUBMIT"/>
       </span>
     </div>
   );

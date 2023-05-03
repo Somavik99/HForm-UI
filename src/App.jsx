@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <Forms register={register} handleSubmit={handleSubmit} />
+        <Forms register={register} handleSubmit={handleSubmit} required={validation}/>
       </div>
     </>
   );
