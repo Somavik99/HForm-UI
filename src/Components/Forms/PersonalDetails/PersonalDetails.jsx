@@ -23,7 +23,7 @@ const PersonalDetails = ({register,required}) => {
               type="text"
               name="name"
               placeholder="Name"
-              {...register("name")}
+              {...register("name", {required})}
               style={{ marginLeft: "8px", width: "250px", height: "30px",padding:"3px" }}
             />
           </div>
@@ -35,7 +35,7 @@ const PersonalDetails = ({register,required}) => {
               type="text"
               name="DobA"
               placeholder="DD/MM/YYYY or Age"
-              {...register("DobA")}
+              {...register("DobA",{required})}
               style={{ marginLeft: "8px", width: "250px", height: "30px" }}
             />
           </div>
@@ -47,7 +47,7 @@ const PersonalDetails = ({register,required}) => {
               type="text"
               name="sex"
               placeholder="Sex"
-              {...register("sex")}
+              {...register("sex",{required})}
               style={{ marginLeft: "8px", width: "250px", height: "30px" }}
             />
           </div>
@@ -57,7 +57,7 @@ const PersonalDetails = ({register,required}) => {
               type="text"
               name="mobile"
               placeholder="Mobile No."
-              {...register("mobile")}
+              {...register("mobile",{required})}
               style={{ marginLeft: "8px", width: "250px", height: "30px" }}
             />
           </div>
@@ -65,7 +65,7 @@ const PersonalDetails = ({register,required}) => {
             <span>
               Govt. Issued ID or Age<span style={{ color: "red" }}>*</span>:
             </span>
-            <GovtIssueId />
+            <GovtIssueId  register={register} required />
           </div>
         </div>
       </div>

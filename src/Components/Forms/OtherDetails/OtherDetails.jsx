@@ -3,7 +3,7 @@ import MaritalSelect from "./MaritalSelect";
 import "./OtherDetails.css"
 import Religion from "./Religion";
 
-const OtherDetails = () => {
+const OtherDetails = ({register,required}) => {
   return (
     <div>
       <div style={{ textDecorationLine: "underline" }}>

@@ -1,6 +1,6 @@
 import "./Address.css";
 
-const Address = () => {
+const Address = ({register,required}) => {
   return (
     <div>
       <div style={{ textDecorationLine: "underline" }}>
@@ -14,6 +14,9 @@ const Address = () => {
             name="Address"
             placeholder="Enter Address"
             style={{ marginLeft: "8px", width: "250px", height: "30px" }}
+            {...register("Address",{
+              required
+            })}
           />
         </div>
         <div>
@@ -23,6 +26,9 @@ const Address = () => {
             name="state"
             placeholder="Enter State"
             style={{ marginLeft: "8px", width: "250px", height: "30px" }}
+            {...register("state",{
+              required
+            })}
           />
         </div>
         <div>
@@ -32,6 +38,9 @@ const Address = () => {
             name="City"
             placeholder="Enter City or Village"
             style={{ marginLeft: "8px", width: "250px", height: "30px" }}
+            {...register("Citty",{
+              required
+            })}
           />
         </div>
         <div>
@@ -41,6 +50,9 @@ const Address = () => {
             name="Country"
             placeholder="Enter Country"
             style={{ marginLeft: "8px", width: "250px", height: "30px" }}
+            {...register("Country",{
+              required
+            })}
           />
         </div>
         <div>
@@ -50,6 +62,9 @@ const Address = () => {
             name="PinCode"
             placeholder="Enter Pin Code"
             style={{ marginLeft: "8px", width: "250px", height: "30px" }}
+            {...register("PinCode",{
+              required
+            })}
           />
         </div>
       </div>

@@ -5,15 +5,9 @@ import Address from "./Address/Address";
 import OtherDetails from "./OtherDetails/OtherDetails";
 import Btn from "./Btn/Btn";
 
-
-
-
-
-const Forms = ({register, handleSubmit}) => {
-
-
+const Forms = ({ register, handleSubmit }) => {
   const onSubmit = (data) => {
-    console.log(data);
+    localStorage.setItem("data", JSON.stringify(data));
   };
 
   return (
@@ -22,13 +16,13 @@ const Forms = ({register, handleSubmit}) => {
         <PersonalDetails register={register} required />
       </div>
       <div className="Contact">
-        <ContactDetails register={register} required/>
+        <ContactDetails register={register} required />
       </div>
       <div className="Address">
         <Address register={register} required />
       </div>
       <div className="Address">
-        <OtherDetails register={register} required/>
+        <OtherDetails register={register} required />
       </div>
       <div style={{ float: "right" }}>
         <Btn />

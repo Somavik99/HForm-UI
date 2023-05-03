@@ -1,6 +1,6 @@
 import "./ContactDetails.css";
 
-const ContactDetails = () => {
+const ContactDetails = ({register,required}) => {
   return (
     <div>
       <div>

@@ -4,7 +4,6 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
-
 const validation = yup
   .object({
     name: yup.string().required(),
@@ -13,12 +12,7 @@ const validation = yup
   .required();
 
 function App() {
-
-  const {
-    register,
-    handleSubmit,
-   
-  } = useForm({
+  const { register, handleSubmit } = useForm({
     resolver: yupResolver(validation),
   });
 
