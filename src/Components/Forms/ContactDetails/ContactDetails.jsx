@@ -1,6 +1,6 @@
 import "./ContactDetails.css";
 
-const ContactDetails = ({ register, required,}) => {
+const ContactDetails = ({ register,}) => {
   return (
     <div >
       <div>
@@ -16,7 +16,7 @@ const ContactDetails = ({ register, required,}) => {
               placeholder="Name"
               style={{ marginLeft: "8px", width: "250px", height: "30px" }}
               {...register("gName", {
-                required,
+                required:true,
               })}
             />
           </div>
@@ -27,7 +27,7 @@ const ContactDetails = ({ register, required,}) => {
               name="email"
               placeholder="Enter Email"
               style={{ marginLeft: "8px", width: "250px", height: "30px" }}
-              {...register("email", { required })}
+              {...register("email", { required:true })}
             />
           </div>
           <div>
@@ -37,7 +37,7 @@ const ContactDetails = ({ register, required,}) => {
               name="EmerGencyContact"
               placeholder="Emergency Contact No."
               style={{ marginLeft: "8px", width: "250px", height: "30px" }}
-              {...register("EmerGencyContact", { required })}
+              {...register("EmerGencyContact", { required:true })}
             />
           </div>
         </div>

@@ -3,7 +3,7 @@ import MaritalSelect from "./MaritalSelect";
 import "./OtherDetails.css";
 import Religion from "./Religion";
 
-const OtherDetails = ({ register, required, }) => {
+const OtherDetails = ({ register, }) => {
   return (
     <div>
       <div style={{ textDecorationLine: "underline" }}>
@@ -17,7 +17,7 @@ const OtherDetails = ({ register, required, }) => {
             placeholder="Enter Occupation"
             style={{ marginLeft: "8px", width: "250px", height: "30px" }}
             {...register("Occupation",{
-              required
+              required:true
             })}
           />
         </div>
@@ -40,7 +40,7 @@ const OtherDetails = ({ register, required, }) => {
             name="Nation"
             style={{ marginLeft: "8px", width: "250px", height: "30px" }}
             {...register("Nation",{
-              required
+              required:true
             })}
           />
         </div>

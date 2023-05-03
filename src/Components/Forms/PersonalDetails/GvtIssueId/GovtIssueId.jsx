@@ -2,7 +2,7 @@ import "./GovtIssuedId.css";
 import Select from "react-select";
 import { useState } from "react";
 
-const GovtIssueId = ({ register, required }) => {
+const GovtIssueId = ({ register }) => {
   const [InitialValue, setInitialValue] = useState(null);
 
   const options = [
@@ -17,7 +17,7 @@ const GovtIssueId = ({ register, required }) => {
         defaultValue={InitialValue}
         placeholder="ID Type"
         {...register("Select", {
-          required,
+          required:true,
         })}
         onChange={() => setInitialValue(InitialValue)}
       />
@@ -27,7 +27,7 @@ const GovtIssueId = ({ register, required }) => {
         placeholder="Enter Govt. ID"
         style={{ width: "250px", height: "30px", margin: "8px" }}
         {...register("Govt", {
-          required,
+          required:true,
         })}
       />
       {/* {errors.Govt == InitialValue && <div>Enter 12 digit Adhaar number</div>}

@@ -3,12 +3,11 @@ import PersonalDetails from "./PersonalDetails/PersonalDetails";
 import ContactDetails from "./ContactDetails/ContactDetails";
 import Address from "./Address/Address";
 import OtherDetails from "./OtherDetails/OtherDetails";
-import Btn from "./Btn/Btn";
+// import Btn from "./Btn/Btn";
 import { useForm } from "react-hook-form";
 
-const Forms = ({ register, handleSubmit,required }) => {
+const Forms = ({ register, handleSubmit }) => {
   const {
-
     formState: { errors },
   } = useForm();
   const onHandleSubmit = (data) => {
@@ -24,31 +23,28 @@ const Forms = ({ register, handleSubmit,required }) => {
   return (
     <form className="container" onSubmit={handleSubmit(onHandleSubmit)}>
       <div className="Personal">
-        <PersonalDetails
-          register={register}
-          required={required}
-         
-        />
+        <PersonalDetails register={register} />
       </div>
       <div className="Contact">
-        <ContactDetails
-          register={register}
-          required={required}
-          onHandleSubmit={onHandleSubmit}
-        />
+        <ContactDetails register={register} />
       </div>
       <div className="Address">
-        <Address register={register} required={required}  />
+        <Address register={register} />
       </div>
       <div className="Address">
-        <OtherDetails
-          register={register}
-          required={required}
-          
-        />
+        <OtherDetails register={register} />
       </div>
       <div style={{ float: "right" }}>
-        <Btn handleSubmit={handleSubmit} register={register}/>
+        <div className="btn_Class">
+          <span>
+            <button className="Cancel">CANCEL</button>
+          </span>
+          <span>
+            <button type="submit" className="submit">
+              SUBMIT
+            </button>
+          </span>
+        </div>
       </div>
     </form>
   );

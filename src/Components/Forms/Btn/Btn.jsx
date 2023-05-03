@@ -1,16 +1,18 @@
-import "./Btn.css"
+import "./Btn.css";
 
-const Btn = () => {
-  return (
-    <div className="btn_Class" >
-      <span >
-        <input type="button" className="Cancel" value="CANCEL" />
+const Btn = () => (
+  <>
+    <div className="btn_Class">
+      <span>
+        <button className="Cancel">CANCEL</button>
       </span>
       <span>
-        <input type="submit" className="submit" value="SUBMIT"/>
+        <button type="submit" className="submit" >
+          SUBMIT
+        </button>
       </span>
     </div>
-  );
-};
+  </>
+);
 
 export default Btn;
