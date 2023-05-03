@@ -1,11 +1,12 @@
-import { useForm } from "react-hook-form";
+// import { useForm } from "react-hook-form";
 import GovtIssueId from "./GvtIssueId/GovtIssueId";
 import "./PersonalDetails.css";
 
 
 
-const PersonalDetails = () => {
-  const {register} = useForm()
+
+const PersonalDetails = ({register,required}) => {
+
   
   return (
     <div className="PersonalContainer">

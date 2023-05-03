@@ -1,3 +1,18 @@
+
+
 input{
-    font-size: 13.8px
+    font-size: 13.8px;
+    border: 3px solid rgba(93, 83, 83, 0.671) ;
+    outline: none;
+    border-radius: 5px;
 }
+
+h3{
+font-weight: 800;
+}
+
+
+span{
+    font-weight:500;
+}
+

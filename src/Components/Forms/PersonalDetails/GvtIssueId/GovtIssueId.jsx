@@ -7,7 +7,6 @@ const GovtIssueId = () => {
   const [InitialValue, setInitialValue] = useState(null);
   const {
     register,
-    formState: { errors },
   } = useForm();
 
   const options = [
@@ -25,6 +24,7 @@ const GovtIssueId = () => {
           required: true,
           maxLength:{}
         })}
+        
       />
       <input
         type="text"
@@ -36,8 +36,8 @@ const GovtIssueId = () => {
         })}
         onChange={(e)=>setInitialValue(e.target.InitialValue)}
       />
-      {errors.Govt == InitialValue && <div>Enter 12 digit Adhaar number</div>}
-      {errors.Govt == InitialValue && <div>Enter the Pan number</div>}
+      {/* {errors.Govt == InitialValue && <div>Enter 12 digit Adhaar number</div>}
+      {errors.Govt == InitialValue && <div>Enter the Pan number</div>} */}
     </div>
   );
 };
